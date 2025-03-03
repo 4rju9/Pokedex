@@ -214,7 +214,10 @@ fun PokedexEntry (
                 contentDescription = entry.pokemonName,
                 loading = {
                     CircularProgressIndicator(
-                        color = MaterialTheme.colorScheme.primary, modifier = Modifier.scale(0.5f)
+                        color = MaterialTheme.colorScheme.primary,
+                        modifier = Modifier
+                            .scale(0.3f)
+                            .align(Alignment.Center)
                     )
                 },
                 success = { success ->
